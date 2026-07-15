@@ -18,6 +18,9 @@ wifi:
   manual_ip:
     static_ip: 192.168.0.10
 
+web_server:
+  port: 8080
+
 everhome_ecotracker_emu:
   serial_number: "112233aabbcc"
   own_ip: "192.168.0.10"

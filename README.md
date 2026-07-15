@@ -8,6 +8,18 @@ Can be used with balcony storage battery like from Growatt.
 esphome:
   name: ecotracker-112233aabbcc
 
+esp32:
+  framework:
+    type: esp-idf
+    advanced:
+      include_builtin_idf_components:
+        - esp_http_server
+        - lwip
+        - mdns
+    sdkconfig_options:
+      CONFIG_LWIP_MAX_SOCKETS: "16"
+      CONFIG_HTTPD_MAX_OPEN_SOCKETS: "7"
+
 external_components:
   - source:
       type: local

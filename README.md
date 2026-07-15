@@ -1,13 +1,22 @@
 # everhome_ecotracker_emu
 everHome EcoTracker Emulator for ESPHome.
 
+Can be used with balcony storage battery like from Growatt.
+
 Add to your config yaml:
 ```yaml
+esphome:
+  name: ecotracker-112233aabbcc
+
 external_components:
   - source:
       type: local
       path: my_components
     components: [ everhome_ecotracker_emu ]
+
+wifi:
+  manual_ip:
+    static_ip: 192.168.0.10
 
 everhome_ecotracker_emu:
   serial_number: "112233aabbcc"

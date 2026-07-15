@@ -3,7 +3,7 @@ everHome EcoTracker Emulator for ESPHome.
 
 Can be used with balcony storage battery like from Growatt.
 
-Add to your config yaml:
+1. Add to your config yaml:
 ```yaml
 esphome:
   name: ecotracker-112233aabbcc
@@ -31,4 +31,7 @@ everhome_ecotracker_emu:
   energy_in_sensor: total_energy               # Zählerstand Bezug (kWh) -> wird intern zu Wh
   energy_out_sensor: total_energy_exported     # Zählerstand Einspeisung (kWh) -> wird intern zu Wh
 ```
+
+2. Create folder: `my_components/everhome_ecotracker_emu`.
+3. Change the `serial_number` and `own_ip` and input variables for example from your SML source.
 
